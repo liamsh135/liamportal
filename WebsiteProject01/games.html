@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liam portal - games</title>
+    <meta charset="utf-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body id="arcade">
+    <div id="dateSection">
+      <button id="date" onclick="DateFunc()">Click me to show date and time!</button>
+      <p id="displayDate"></p>
+      <script>
+        let DateFunc = () => {
+          document.getElementById("displayDate").innerHTML = Date();
+        };
+      </script>
+    </div>
+    <header id="main">
+      <h1 id="main title">Arcade</h1>
+      <p>Welcome to the arcade! Here there will be flash games and games you can download!</p>
+    </header>
+    <div id="nav">
+      <ul>
+        <li><a href="#main">Main</a></li>
+        <li><a href="#fgames">Online Games</a></li>
+        <li><a href="#dgames">Download Games</a></li>
+        <li><a href="#footer">Contact and site map</a></li>
+      </ul>
+    </div>
+    <div id="fgames">
+      <h2>Flash/HTML5 online games</h2>
+      <h3>Coming soon!</h3>
+    <div id="dgames">
+      <h2>Download PC games (no viruses and free!)</h2>
+      <iframe frameborder="0" src="https://itch.io/embed/637856" width="552" height="167"><a href="https://gim-ent.itch.io/qball">Qball PC v.1.0.0 by GIM ent</a></iframe>
+    </div>
+    <footer id="footer">
+      <a href="index.html"><button id="homeButton" onclick="homeFunc()">Home Page</button></a>
+      <a href="contact.html"><button id="contactButton" onclick="contactFunc()">Contact</button></a>
+      <script>
+        let contactFunc = () => {
+          document.getElementById("contactButton").innerHTML = "please wait...";
+        };
+        let homeFunc = () => {
+            document.getElementById("homeButton").innerHTML = "please wait...";
+        };
+      </script>
+      <p>&copy;All Rights are saved to Liam | 2020</p>
+    </footer>
+  </body>
+</html>
